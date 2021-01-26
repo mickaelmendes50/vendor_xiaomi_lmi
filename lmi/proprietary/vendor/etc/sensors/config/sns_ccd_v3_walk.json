@@ -1,6 +1,6 @@
 {
   "config": {
-    "hw_platform": ["MTP", "Surf", "RCM", "QRD"],
+    "hw_platform": ["MTP", "Surf", "RCM", "QRD", "LMI"],
     "soc_id": ["356"]
   },
   "ccd_walk": {
