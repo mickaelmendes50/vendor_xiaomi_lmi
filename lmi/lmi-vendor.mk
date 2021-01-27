@@ -34,6 +34,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/lmi/proprietary/vendor/bin/diag_mdlog:$(TARGET_COPY_OUT_VENDOR)/bin/diag_mdlog \
     vendor/xiaomi/lmi/proprietary/vendor/bin/diag_socket_log:$(TARGET_COPY_OUT_VENDOR)/bin/diag_socket_log \
     vendor/xiaomi/lmi/proprietary/vendor/bin/diag_uart_log:$(TARGET_COPY_OUT_VENDOR)/bin/diag_uart_log \
+    vendor/xiaomi/lmi/proprietary/vendor/bin/displayfeature:$(TARGET_COPY_OUT_VENDOR)/bin/displayfeature \
     vendor/xiaomi/lmi/proprietary/vendor/bin/dpmQmiMgr:$(TARGET_COPY_OUT_VENDOR)/bin/dpmQmiMgr \
     vendor/xiaomi/lmi/proprietary/vendor/bin/dspservice:$(TARGET_COPY_OUT_VENDOR)/bin/dspservice \
     vendor/xiaomi/lmi/proprietary/vendor/bin/embmsslServer:$(TARGET_COPY_OUT_VENDOR)/bin/embmsslServer \
@@ -74,6 +75,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/lmi/proprietary/vendor/bin/hw/vendor.qti.power.pasrmanager@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.power.pasrmanager@1.0-service \
     vendor/xiaomi/lmi/proprietary/vendor/bin/hw/vendor.qti.secure_element@1.2-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.secure_element@1.2-service \
     vendor/xiaomi/lmi/proprietary/vendor/bin/hw/vendor.qti.spu@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.spu@1.0-service \
+    vendor/xiaomi/lmi/proprietary/vendor/bin/hw/vendor.xiaomi.hardware.displayfeature@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.xiaomi.hardware.displayfeature@1.0-service \
     vendor/xiaomi/lmi/proprietary/vendor/bin/ims_rtp_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/ims_rtp_daemon \
     vendor/xiaomi/lmi/proprietary/vendor/bin/imsdatadaemon:$(TARGET_COPY_OUT_VENDOR)/bin/imsdatadaemon \
     vendor/xiaomi/lmi/proprietary/vendor/bin/imsqmidaemon:$(TARGET_COPY_OUT_VENDOR)/bin/imsqmidaemon \
@@ -309,6 +311,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/lmi/proprietary/vendor/etc/init/vendor.qti.tftp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.tftp.rc \
     vendor/xiaomi/lmi/proprietary/vendor/etc/init/vendor.sensors.qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.qti.rc \
     vendor/xiaomi/lmi/proprietary/vendor/etc/init/vendor.sensors.sscrpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.sscrpcd.rc \
+    vendor/xiaomi/lmi/proprietary/vendor/etc/init/vendor.xiaomi.hardware.displayfeature@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.displayfeature@1.0-service.rc \
     vendor/xiaomi/lmi/proprietary/vendor/etc/init/vppservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vppservice.rc \
     vendor/xiaomi/lmi/proprietary/vendor/etc/init/wfdvndservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wfdvndservice.rc \
     vendor/xiaomi/lmi/proprietary/vendor/etc/izat.conf:$(TARGET_COPY_OUT_VENDOR)/etc/izat.conf \
@@ -630,6 +633,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/lmi/proprietary/vendor/lib/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so \
     vendor/xiaomi/lmi/proprietary/vendor/lib/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so \
     vendor/xiaomi/lmi/proprietary/vendor/lib/hw/vendor.qti.hardware.fm@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.fm@1.0-impl.so \
+    vendor/xiaomi/lmi/proprietary/vendor/lib/hw/vendor.xiaomi.hardware.displayfeature@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.xiaomi.hardware.displayfeature@1.0-impl.so \
     vendor/xiaomi/lmi/proprietary/vendor/lib/hw/vulkan.adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vulkan.adreno.so \
     vendor/xiaomi/lmi/proprietary/vendor/lib/libAlacSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libAlacSwDec.so \
     vendor/xiaomi/lmi/proprietary/vendor/lib/libApeSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libApeSwDec.so \
@@ -679,6 +683,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/lmi/proprietary/vendor/lib/libcapiv2vop.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcapiv2vop.so \
     vendor/xiaomi/lmi/proprietary/vendor/lib/libdiag.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdiag.so \
     vendor/xiaomi/lmi/proprietary/vendor/lib/libdiagjni.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdiagjni.so \
+    vendor/xiaomi/lmi/proprietary/vendor/lib/libdisplayfeature.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdisplayfeature.so \
+    vendor/xiaomi/lmi/proprietary/vendor/lib/libdisplayfeatureservice.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdisplayfeatureservice.so \
     vendor/xiaomi/lmi/proprietary/vendor/lib/libdrc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdrc.so \
     vendor/xiaomi/lmi/proprietary/vendor/lib/libdsd2pcm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdsd2pcm.so \
     vendor/xiaomi/lmi/proprietary/vendor/lib/libgcs-calwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgcs-calwrapper.so \
@@ -784,6 +790,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/lmi/proprietary/vendor/lib/vendor.qti.hardware.wifidisplaysession@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.wifidisplaysession@1.0.so \
     vendor/xiaomi/lmi/proprietary/vendor/lib/vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl.so \
     vendor/xiaomi/lmi/proprietary/vendor/lib/vendor.qti.voiceprint@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.voiceprint@1.0.so \
+    vendor/xiaomi/lmi/proprietary/vendor/lib/vendor.xiaomi.hardware.displayfeature@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.xiaomi.hardware.displayfeature@1.0.so \
     vendor/xiaomi/lmi/proprietary/vendor/lib64/android.hardware.secure_element@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.secure_element@1.0-impl.so \
     vendor/xiaomi/lmi/proprietary/vendor/lib64/btaudio_offload_if.so:$(TARGET_COPY_OUT_VENDOR)/lib64/btaudio_offload_if.so \
     vendor/xiaomi/lmi/proprietary/vendor/lib64/camera/com.qti.eeprom.lmi_sunny_imx686_gt24p64b.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.eeprom.lmi_sunny_imx686_gt24p64b.so \
@@ -923,6 +930,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/lmi/proprietary/vendor/lib64/hw/camera.qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/camera.qcom.so \
     vendor/xiaomi/lmi/proprietary/vendor/lib64/hw/com.dsi.ant@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/com.dsi.ant@1.0-impl.so \
     vendor/xiaomi/lmi/proprietary/vendor/lib64/hw/com.qti.chi.override.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/com.qti.chi.override.so \
+    vendor/xiaomi/lmi/proprietary/vendor/lib64/hw/displayfeature.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/displayfeature.default.so \
     vendor/xiaomi/lmi/proprietary/vendor/lib64/hw/fingerprint.goodix_fod.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.goodix_fod.so \
     vendor/xiaomi/lmi/proprietary/vendor/lib64/hw/fingerprint.goodix_fod6.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.goodix_fod6.so \
     vendor/xiaomi/lmi/proprietary/vendor/lib64/hw/sound_trigger.primary.kona.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/sound_trigger.primary.kona.so \
@@ -941,6 +949,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/lmi/proprietary/vendor/lib64/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so \
     vendor/xiaomi/lmi/proprietary/vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so \
     vendor/xiaomi/lmi/proprietary/vendor/lib64/hw/vendor.qti.power.pasrmanager@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.power.pasrmanager@1.0-impl.so \
+    vendor/xiaomi/lmi/proprietary/vendor/lib64/hw/vendor.xiaomi.hardware.displayfeature@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.xiaomi.hardware.displayfeature@1.0-impl.so \
     vendor/xiaomi/lmi/proprietary/vendor/lib64/hw/vulkan.adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vulkan.adreno.so \
     vendor/xiaomi/lmi/proprietary/vendor/lib64/lib-imscmservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imscmservice.so \
     vendor/xiaomi/lmi/proprietary/vendor/lib64/lib-imsdpl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imsdpl.so \
@@ -1069,6 +1078,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/lmi/proprietary/vendor/lib64/libdiag.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdiag.so \
     vendor/xiaomi/lmi/proprietary/vendor/lib64/libdiagjni.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdiagjni.so \
     vendor/xiaomi/lmi/proprietary/vendor/lib64/libdisp-aba.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdisp-aba.so \
+    vendor/xiaomi/lmi/proprietary/vendor/lib64/libdisplayfeature.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdisplayfeature.so \
+    vendor/xiaomi/lmi/proprietary/vendor/lib64/libdisplayfeatureservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdisplayfeatureservice.so \
     vendor/xiaomi/lmi/proprietary/vendor/lib64/libdisplayqos.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdisplayqos.so \
     vendor/xiaomi/lmi/proprietary/vendor/lib64/libdisplayskuutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdisplayskuutils.so \
     vendor/xiaomi/lmi/proprietary/vendor/lib64/libdpmqmihal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdpmqmihal.so \
@@ -1404,6 +1415,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/lmi/proprietary/vendor/lib64/vendor.qti.qspmhal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.qspmhal@1.0.so \
     vendor/xiaomi/lmi/proprietary/vendor/lib64/vendor.qti.spu@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.spu@1.0.so \
     vendor/xiaomi/lmi/proprietary/vendor/lib64/vendor.qti.voiceprint@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.voiceprint@1.0.so \
+    vendor/xiaomi/lmi/proprietary/vendor/lib64/vendor.xiaomi.hardware.displayfeature@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.hardware.displayfeature@1.0.so \
     vendor/xiaomi/lmi/proprietary/vendor/radio/qcril_database/qcril.db:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/qcril.db \
     vendor/xiaomi/lmi/proprietary/vendor/radio/qcril_database/upgrade/0_initial.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/0_initial.sql \
     vendor/xiaomi/lmi/proprietary/vendor/radio/qcril_database/upgrade/1_version_intro.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/1_version_intro.sql \
